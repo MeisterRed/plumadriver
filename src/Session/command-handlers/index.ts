@@ -30,6 +30,7 @@ import { switchToFrame } from './switch-to-frame';
 import { switchToParentFrame } from './switch-to-parent-frame';
 import { getComputedLabel } from './get-computed-label';
 import { getElementProperty } from './get-element-property';
+import { getComputedLabel } from './get-computed-label';
 
 export const commandHandlers = {
   [COMMANDS.DELETE_SESSION]: deleteSession,

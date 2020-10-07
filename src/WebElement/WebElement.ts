@@ -399,7 +399,6 @@ class WebElement {
     return selected;
   }
 
-  //computeAccessibleName, computeAccessibleDescription,
   getLabel(): string {
     return computeAccessibleName(this.element);
   }

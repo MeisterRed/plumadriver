@@ -35,7 +35,7 @@ describe('Get Computed Label', () => {
       .expect(200);
   });
 
-    it('returns the label', async () => {
+    it('returns the aria label', async () => {
       const {
         body: {
           value: { [ELEMENT]: elementId },
