@@ -98,7 +98,7 @@ element.get(
 );
 
 element.get(
-  'computedlabel',
+  '/computedlabel',
   sessionEndpointExceptionHandler(
     defaultSessionEndpointLogic,
     COMMANDS.GET_COMPUTED_LABEL,

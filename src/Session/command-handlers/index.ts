@@ -28,6 +28,7 @@ import { getPageSource } from './get-page-source';
 import { getActiveElement } from './get-active-element';
 import { switchToFrame } from './switch-to-frame';
 import { switchToParentFrame } from './switch-to-parent-frame';
+import { getComputedLabel } from './get-computed-label';
 
 export const commandHandlers = {
   [COMMANDS.DELETE_SESSION]: deleteSession,
@@ -59,4 +60,5 @@ export const commandHandlers = {
   [COMMANDS.SWITCH_TO_FRAME]: switchToFrame,
   [COMMANDS.SWITCH_TO_PARENT_FRAME]: switchToParentFrame,
   [COMMANDS.ELEMENT_SELECTED]: elementSelected,
+  [COMMANDS.GET_COMPUTED_LABEL]: getComputedLabel,
 };

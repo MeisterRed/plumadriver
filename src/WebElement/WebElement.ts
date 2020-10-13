@@ -1,10 +1,7 @@
 import { v1 as uuidv1 } from 'uuid';
 import { isFocusableAreaElement } from 'jsdom/lib/jsdom/living/helpers/focusing';
 import { implSymbol } from 'jsdom/lib/jsdom/living/generated/utils';
-import {
-  computeAccessibleName,
-  computeAccessibleDescription,
-} from "dom-accessibility-api";
+import { computeAccessibleName } from 'dom-accessibility-api';
 import { ELEMENT, ElementBooleanAttributeValues } from '../constants/constants';
 import { InvalidArgument, InvalidElementState } from '../Error/errors';
 import {
@@ -393,7 +390,8 @@ class WebElement {
     return selected;
   }
 
-  getLabel(): string { //  computeAccessibleName, computeAccessibleDescription,
+  //computeAccessibleName, computeAccessibleDescription,
+  getLabel(): string {
     return computeAccessibleName(this.element);
   }
 }
