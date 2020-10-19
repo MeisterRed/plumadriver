@@ -418,6 +418,22 @@ class WebElement {
   getLabel(): string {
     return computeAccessibleName(this.element);
   }
+  
+  calculateRect(
+    windowCordX: number,
+    WindowCordY: number,
+  ): Record<string, unknown> {
+    const rect: DOMRect = this.element.getBoundingClientRect();
+
+    const rectCords: Record<string, unknown> = {
+      x: rect.x + windowCordX,
+      y: rect.y + WindowCordY,
+      height: rect.height,
+      Width: rect.width,
+    };
+
+    return rectCords;
+  }
 }
 
 export default WebElement;

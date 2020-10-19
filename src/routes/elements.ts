@@ -125,4 +125,12 @@ element.get(
   ),
 );
 
+element.get(
+  '/rect',
+  sessionEndpointExceptionHandler(
+    defaultSessionEndpointLogic,
+    COMMANDS.GET_ELEMENT_RECT,
+  ),
+);
+
 export default element;

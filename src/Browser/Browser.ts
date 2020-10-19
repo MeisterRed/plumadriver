@@ -423,6 +423,28 @@ class Browser {
     return foundElement;
   }
 
+  /* calculateElementRect(currentElement: HTMLElement): Object {
+    var rect: DOMRect;
+    rect = currentElement.getBoundingClientRect()
+
+    const rectCords: Object = {
+      x: rect.x + 5,
+      y: rect.y
+      height: rect.height,
+      Width: rect.width
+    }
+
+    return rectCords
+  } */
+
+  getWindowCordX(): number {
+    return this.currentBrowsingContextWindow.scrollX;
+  }
+
+  getWindowCordY(): number {
+    return this.currentBrowsingContextWindow.scrollY;
+  }
+
   /**
    * returns a string serialization of the DOM
    */
